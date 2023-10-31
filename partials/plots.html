@@ -1,0 +1,16 @@
+<div class="sub_header">
+    <div>
+        <div class="btn_sub" onclick="common.plot_edit_window();">Add</div>
+    </div>
+    <div>
+        <div id="paginator">{$paginator}</div>
+        <div class="input_group">
+            <i class="icon_search"></i>
+            <input name="search" data-column="number" type="text" value="{$search[0]}" placeholder="Search number"
+                   oninput="common.search_do('plots');">
+        </div>
+    </div>
+</div>
+<div id="table">
+    {include file="./partials/plots_table.html"}
+</div>

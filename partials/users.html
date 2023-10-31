@@ -1,0 +1,26 @@
+<div class="sub_header">
+    <div>
+        <div class="btn_sub" onclick="common.user_edit_window();">Add</div>
+    </div>
+    <div>
+        <div id="paginator">{$paginator}</div>
+        <div class="input_group">
+            <i class="icon_search"></i>
+            <input name="search" data-column="email" type="text" value="{$search[0]}" placeholder="Search email"
+                   oninput="common.search_do('users');">
+        </div>
+        <div class="input_group">
+            <i class="icon_search"></i>
+            <input name="search" data-column="phone" type="text" value="{$search[1]}" placeholder="Search phone"
+                   oninput="common.search_do('users');">
+        </div>
+        <div class="input_group">
+            <i class="icon_search"></i>
+            <input name="search" data-column="first_name" type="text" value="{$search[2]}" placeholder="Search first name"
+                   oninput="common.search_do('users');">
+        </div>
+    </div>
+</div>
+<div id="table">
+    {include file="./partials/users_table.html"}
+</div>
